@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Website</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+    <img src="images/logo.jpg" alt="Company Logo" />
+    </div>
+
+    <nav>
+        <ul>
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="ourprofile.html">Our Profile</a></li>
+        <li><a href="index.html#achievement">Achievement</a></li>
+        <li><a href="index.html#message">Message Us</a></li>
+        </ul>
+    </nav>
+
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="home">
+    <h1 id="welcomeText">Hi Harfi, Welcome To Website</h1>
+    <p>Ini adalah website latihan pertama</p>
+    <div class="banner">1366×578</div>
+    
+  </section>
+
+  <!-- Our Facilitation Section -->
+  <section id="profile" class="facilitation">
+    <h2>Our Facilitation</h2>
+    <div class="facilities">
+      <div class="facility">
+        <div class="circle"></div>
+        <p>Professional Teacher</p>
+      </div>
+      <div class="facility">
+        <div class="circle"></div>
+        <p>Sport Field</p>
+      </div>
+      <div class="facility">
+        <div class="circle"></div>
+        <p>Classroom</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Message Us Section -->
+  <section id="message" class="message">
+    <h2>Message Us</h2>
+    <div class="message-container">
+      <form id="messageForm">
+        <label>Nama:</label>
+        <input type="text" id="name" placeholder="Nama" required />
+
+        <label>Tanggal Lahir:</label>
+        <input type="date" id="birthdate" required />
+
+        <label>Jenis Kelamin:</label>
+        <div class="gender">
+          <label><input type="radio" name="gender" value="Laki-Laki" required /> Laki-Laki</label>
+          <label><input type="radio" name="gender" value="Perempuan" /> Perempuan</label>
+        </div>
+
+        <label>Pesan:</label>
+        <textarea id="messageInput" placeholder="Pesan" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <div class="output">
+        <p><b>Current time:</b> <span id="time"></span></p>
+        <br>
+        <p><b>Nama:</b> <span id="outputName"></span></p>
+        <p><b>Tanggal Lahir:</b> <span id="outputBirthdate"></span></p>
+        <p><b>Jenis Kelamin:</b> <span id="outputGender"></span></p>
+        <p><b>Pesan:</b> <span id="outputMessage"></span></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Created By Ryandi Syahputra © 2025</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
